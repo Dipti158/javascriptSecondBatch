@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <div id="displayCar"></div>
+    <div id="displayAddress"></div>
+    <script>
+      const car = {
+        make: "hundai",
+        model: "creata",
+        year: 2023,
+        type: "electic",
+      };
+
+      document.getElementById(
+        "displayCar"
+      ).innerHTML = `My Car Model Is ${car["model"]}  </br> And Model Of This Car Is ${car["year"]}`;
+
+      //use square bracket in object when key comes from variable otherwise we can use .(dot) also
+
+      const address = {
+        street: "street1",
+        city: "baroda",
+        state: "gujarat",
+      };
+
+      document.getElementById(
+        "displayAddress"
+      ).innerHTML = `My City Is ${address.city}`;
+    </script>
+  </body>
+</html>
